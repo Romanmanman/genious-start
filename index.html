@@ -4,31 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modern bakery</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
       <nav>
         <a href="#"><img src="./images/logo.svg" alt="Shop bakery" /></a>
         <ul>
-          <li><a href="#traditions-section">Our traditions</a></li>
-          <li><a href="#chefs-section">Chefs</a></li>
-          <li><a href="#formats-section">Format</a></li>
-          <li><a href="#contacts-section">Contacts</a></li>
+          <li>
+            <a class="nav-link" href="#traditions-section">Our traditions</a>
+          </li>
+          <li><a class="nav-link" href="#chefs-section">Chefs</a></li>
+          <li><a class="nav-link" href="#formats-section">Format</a></li>
+          <li><a class="nav-link" href="#contacts-section">Contacts</a></li>
         </ul>
       </nav>
-      <button type="button">Order call</button>
+      <button class="button" type="button">Order call</button>
     </header>
     <main>
       <section>
-        <h1>Modern bakery</h1>
+        <h1 class="hero-title"><span class="accent">Modern</span> bakery</h1>
       </section>
       <section id="traditions-section">
-        <ul>
+        <ul class="main-features">
           <li>High demand in the market</li>
           <li>Budget-friendly formats</li>
           <li>Expirienced managment team</li>
         </ul>
-        <h2>New traditional format</h2>
+        <h2 class="section-title">New traditional format</h2>
         <p>
           <span>shop bakery</span> — is a bakery that takes all the best
           features and preserves the traditional taste of pastries using
@@ -42,7 +45,9 @@
         <img src="./images/baker-man.jpg" alt="baker-man with bread" />
       </section>
       <section id="chefs-section">
-        <h2>Our best chefs</h2>
+        <h2 class="section-title">
+          Our best <span class="section-accent">chefs</span>
+        </h2>
         <ul>
           <li>
             <article>
@@ -63,7 +68,7 @@
         </ul>
       </section>
       <section id="formats-section">
-        <h2>Formats</h2>
+        <h2 class="section-title">Formats</h2>
         <ul>
           <li>
             <article>
@@ -83,7 +88,7 @@
         </ul>
       </section>
       <section id="contacts-section">
-        <h2>Join our network of bakeries</h2>
+        <h2 class="section-title">Join our network of bakeries</h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.163447036114!2d30.488698376098355!3d50.45668098691574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1753080918581!5m2!1sru!2sua"
           width="603"
