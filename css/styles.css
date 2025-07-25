@@ -42,15 +42,46 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+  margin: 0;
 }
 address {
   font-style: normal;
 }
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.section {
+  padding: 48px 0;
+}
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 /* Button */
 .button {
+  padding: 16px 32px;
   background-color: var(--color-brand-light);
   color: var(--color-primary-light);
   border: 2px solid var(--color-brand-light);
@@ -69,7 +100,6 @@ ul {
 }
 .nav-link:hover {
   color: var(--color-brand-light);
-  font-weight: 600;
 }
 .address-link {
   font-size: 16px;
@@ -84,22 +114,70 @@ ul {
   font-size: 14px;
   color: #a18268;
 }
+/* Header */
+header {
+  background-color: lightgray;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-nav {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 40px;
+}
+.nav-list {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
 /* Hero section */
+.hero-section {
+  padding: 272px 0;
+  background-image: url('../images/couple-drink-coffee.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
 .hero-title {
   color: var(--color-primary-light);
   text-align: center;
   font-size: 128px;
   font-weight: 900;
+  margin-bottom: 0;
 }
 .hero-title .accent {
   color: var(--color-brand-light);
 }
-/* Main features */
-.main-features {
+/* Advantages */
+.advantages {
   background-color: var(--color-brand-light);
+  padding: 16px;
+}
+.main-features {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
   color: var(--color-primary-light);
   font-weight: 300;
   font-size: 20px;
+}
+/* Tradition features */
+.traditions-section {
+  padding-top: 96px;
+}
+.tradition-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.tradition-content {
+  max-width: 710px;
 }
 .section-title {
   color: var(--color-primary-dark);
@@ -110,6 +188,12 @@ ul {
 .section-title .section-accent {
   color: var(--color-brand-dark);
 }
+.section-title-traditions {
+  margin-bottom: 42px;
+}
+.limited {
+  max-width: 360px;
+}
 .tradition-text span {
   color: var(--color-brand-light);
   font-weight: 600;
@@ -119,8 +203,12 @@ ul {
 }
 /* chef section */
 .chef-title {
+  margin-bottom: 16px;
   font-size: 40px;
   font-weight: 600;
+}
+.section-title-chefs {
+  margin-bottom: 80px;
 }
 /* format section */
 .format-title {
@@ -130,4 +218,23 @@ ul {
 .format-details {
   font-size: 14px;
   font-weight: 300;
+}
+.format-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+.formats-section-title {
+  margin-bottom: 80px;
+}
+.formats-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.format-card {
+  border: lightgrey 1px solid; /* Remove */
+  border-radius: 16px;
+}
+/* Contacts section */
+.section-contact-title {
+  margin-bottom: 16px;
 }
