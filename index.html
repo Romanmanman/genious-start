@@ -67,12 +67,17 @@
       </section>
       <section class="section" id="chefs-section">
         <div class="container">
-          <h2 class="section-title section-title-chefs">
+          <h2 class="section-title section-title-chefs center">
             Our best <span class="section-accent">chefs</span>
           </h2>
           <ul>
             <li>
               <article>
+                <img
+                  class="chef-image"
+                  src="./images/nastya-chef.jpg"
+                  alt="Nastya chef"
+                />
                 <h3 class="chef-title">Nasya</h3>
                 <p>Hello, my name is Nasya!</p>
                 <p>I have been baking cakes for ten years.</p>
@@ -81,6 +86,11 @@
             </li>
             <li>
               <article>
+                <img
+                  class="chef-image"
+                  src="./images/vlad-chef.jpg"
+                  alt="Vlad chef"
+                />
                 <h3 class="chef-title">Vlad</h3>
                 <p>Hello, I am Vlad!</p>
                 <p>I have eighteen years expirience as a pastry chef.</p>
@@ -92,7 +102,12 @@
       </section>
       <section class="section" id="formats-section">
         <div class="container">
-          <h2 class="section-title formats-section-title">Formats</h2>
+          <h2 class="section-title formats-section-title center">Formats</h2>
+          <button type="button" class="carousel-button">
+            <svg width="16" height="16">
+              <use href="./images/icons.svg#icon-arrow-left"></use>
+            </svg>
+          </button>
           <ul class="formats-list">
             <li class="format-item">
               <article class="format-card">
@@ -133,6 +148,11 @@
               </article>
             </li>
           </ul>
+          <button type="button" class="carousel-button">
+            <svg width="16" height="16">
+              <use href="./images/icons.svg#icon-arrow-left"></use>
+            </svg>
+          </button>
         </div>
       </section>
       <section class="section" id="contacts-section">
@@ -152,7 +172,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <nav>
           <a href="/">
@@ -188,10 +208,18 @@
               >
             </li>
             <li>
-              <a href="#"><!--Facebook icon--></a>
+              <a href="#">
+                <svg class="address-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a href="#"><!--Instagram icon--></a>
+              <a href="#">
+                <svg class="address-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
           </ul>
           <a class="address-link" href="#" target="_blank">Private policy</a>
