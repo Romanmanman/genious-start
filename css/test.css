@@ -1,0 +1,14 @@
+.container {
+  border: 1px solid black;
+  padding: 20px;
+}
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
