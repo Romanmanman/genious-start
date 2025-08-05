@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modern bakery</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <div class="header-container">
-          <nav class="header-nav">
+        <div class="header__container">
+          <nav class="header__nav">
             <a href="#"><img src="./images/logo.svg" alt="Shop bakery" /></a>
-            <ul class="nav-list">
+            <ul class="header__list">
               <li>
                 <a class="nav-link" href="#traditions-section"
                   >Our traditions</a
@@ -23,20 +23,22 @@
               <li><a class="nav-link" href="#contacts-section">Contacts</a></li>
             </ul>
           </nav>
-          <button class="button" type="button">Order call</button>
+          <button class="button" type="button">Order a callback</button>
         </div>
       </div>
     </header>
     <main>
       <section class="hero-section">
         <div class="container">
-          <h1 class="hero-title"><span class="accent">Modern</span> bakery</h1>
+          <h1 class="hero-section__title">
+            <span class="text-brand">Modern</span> bakery
+          </h1>
         </div>
       </section>
       <section class="advantages">
         <div class="container">
           <h2 class="visually-hidden">Our advantages</h2>
-          <ul class="main-features">
+          <ul class="advantages__main-features">
             <li>High demand in the market</li>
             <li>Budget-friendly formats</li>
             <li>Expirienced managment team</li>
@@ -45,119 +47,158 @@
       </section>
       <section class="traditions-section section" id="traditions-section">
         <div class="container">
-          <div class="tradition-container">
-            <div class="tradition-content">
-              <h2 class="section-title section-title-traditions">
+          <div class="traditions-section__container">
+            <div class="traditions-section__content">
+              <h2 class="section__title traditions-section__title">
                 New traditional format
               </h2>
-              <p class="tradition-text">
-                <span class="uppercase">shop bakery</span> — is a bakery that
-                takes all the best features and preserves the traditional taste
-                of pastries using traditional ingredients
+              <p>
+                <span class="text-brand text-bold text-uppercase"
+                  >shop bakery</span
+                >
+                — is a bakery that takes all the best features and preserves the
+                traditional taste of pastries using traditional ingredients
               </p>
-              <p class="tradition-text limited">
+              <p
+                class="traditions-section__text traditions-section__text--limited"
+              >
                 We work like the best bakeries in the world —
-                <span>everything is ready in five minutes</span>. Our bikeries
-                also features modern designs and high-quality service.
+                <span class="text-brand text-bold"
+                  >everything is ready in five minutes</span
+                >. Our bikeries also features modern designs and high-quality
+                service.
               </p>
             </div>
             <img src="./images/baker-man.jpg" alt="baker-man with bread" />
           </div>
         </div>
       </section>
-      <section class="section" id="chefs-section">
+      <section class="chefs-section section" id="chefs-section">
         <div class="container">
-          <h2 class="section-title section-title-chefs center">
-            Our best <span class="section-accent">chefs</span>
+          <h2
+            class="section__title chefs-section__chefs section__title--centered"
+          >
+            Our best <span class="text-brand-dark">chefs</span>
           </h2>
-          <ul class="chefs-list">
-            <li class="chef-item">
+          <ul class="chefs-section__list">
+            <li class="chefs-section__item">
               <article class="chef-card">
                 <img
-                  class="chef-image"
+                  class="chef-card__image"
                   src="./images/nastya-chef.jpg"
                   alt="Nastya chef"
                 />
                 <div>
-                  <h3 class="chef-title">Nasya</h3>
-                  <div class="chef-text">
-                    <p>Hello, my name is Nasya!</p>
-                    <p>I have been baking cakes for ten years.</p>
-                    <p>I can bake you the tastiest cakes!</p>
-                  </div>
+                  <h3 class="chef-card__title">Nasya</h3>
+
+                  <p class="chef-card__text">Hello, my name is Nasya!</p>
+                  <p class="chef-card__text">
+                    I have been baking cakes for ten years.
+                  </p>
+                  <p class="chef-card__text">
+                    I can bake you the tastiest cakes!
+                  </p>
                 </div>
               </article>
             </li>
-            <li class="chef-item">
+            <li class="chefs-section__item">
               <article class="chef-card">
                 <img
-                  class="chef-image"
+                  class="chef-card__image"
                   src="./images/vlad-chef.jpg"
                   alt="Vlad chef"
                 />
                 <div>
-                  <h3 class="chef-title">Vlad</h3>
-                  <div class="chef-text">
-                    <p>Hello, I am Vlad!</p>
-                    <p>I have eighteen years expirience as a pastry chef.</p>
-                    <p>I can prepare the testiest filling for your cakes.</p>
-                  </div>
+                  <h3 class="chef-card__title">Vlad</h3>
+
+                  <p class="chef-card__text">Hello, I am Vlad!</p>
+                  <p class="chef-card__text">
+                    I have eighteen years expirience as a pastry chef.
+                  </p>
+                  <p class="chef-card__text">
+                    I can prepare the testiest filling for your cakes.
+                  </p>
                 </div>
               </article>
             </li>
           </ul>
         </div>
       </section>
-      <section class="section" id="formats-section">
+      <section class="formats-section section" id="formats-section">
         <div class="container">
-          <h2 class="section-title formats-section-title center">Formats</h2>
-          <div class="formats-container">
+          <h2
+            class="formants-section__title section__title section__title--centered"
+          >
+            Formats
+          </h2>
+          <div class="formants-section__container">
             <button type="button" class="carousel-button">
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow-left"></use>
               </svg>
             </button>
-            <ul class="formats-list">
-              <li class="format-item">
+            <ul class="formants-section__list">
+              <li class="formants-section__item">
                 <article class="format-card">
-                  <h3 class="format-title">Walrus</h3>
-                  <div class="format-details">
-                    <p>Area: up to 120 m2</p>
-                    <p>Menu: extended menu</p>
-                    <p>
+                  <h3 class="format-card__title">Walrus</h3>
+                  <img
+                    class="format-card__image"
+                    src="./images/walrus-format.jpg"
+                    alt="walrus format"
+                  />
+                  <div class="format-card__details">
+                    <p class="format-card__text">Area: up to 120 m2</p>
+                    <p class="format-card__text">Menu: extended menu</p>
+                    <p class="format-card__text">
                       Staff: 2 sales assistants, 2 bakers, 2 baker's assistants,
                       2 waiters
                     </p>
-                    <p>Seats: yes</p>
+                    <p class="format-card__text">Seats: yes</p>
                   </div>
                 </article>
               </li>
-              <li class="format-item">
+              <li class="formants-section__item">
                 <article class="format-card">
-                  <h3 class="format-title">Horseshoe</h3>
-                  <div class="format-details">
-                    <p>Area: up to 25 m2</p>
-                    <p>Menu: most popular menu postitions</p>
-                    <p>
+                  <h3 class="format-card__title">Horseshoe</h3>
+                  <img
+                    class="format-card__image"
+                    src="./images/horseshoe-format.jpg"
+                    alt="walrus format"
+                  />
+                  <div class="format-card__details">
+                    <p class="format-card__text">Area: up to 25 m2</p>
+                    <p class="format-card__text">
+                      Menu: most popular menu postitions
+                    </p>
+                    <p class="format-card__text">
                       Staff: 2 sales assistants, 2 bakers, 1 baker's assistants
                     </p>
-                    <p>Seats: none</p>
+                    <p class="format-card__text">Seats: none</p>
                   </div>
                 </article>
               </li>
-              <li class="format-item">
+              <li class="formants-section__item">
                 <article class="format-card">
-                  <h3 class="format-title">Handlebar</h3>
-                  <div class="format-details">
-                    <p>Area: up to 15 m2</p>
-                    <p>Menu: most popular menu postitions</p>
-                    <p>Staff: 1 saler, 1 baker, 1 baker's assistant</p>
-                    <p>Seats: none</p>
+                  <h3 class="format-card__title">Handlebar</h3>
+                  <img
+                    class="format-card__image"
+                    src="./images/handlebar-format.jpg"
+                    alt="walrus format"
+                  />
+                  <div class="format-card__details">
+                    <p class="format-card__text">Area: up to 15 m2</p>
+                    <p class="format-card__text">
+                      Menu: most popular menu postitions
+                    </p>
+                    <p class="format-card__text">
+                      Staff: 1 saler, 1 baker, 1 baker's assistant
+                    </p>
+                    <p class="format-card__text">Seats: none</p>
                   </div>
                 </article>
               </li>
             </ul>
-            <button type="button" class="carousel-button">
+            <button type="button" class="carousel-button next">
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow-left"></use>
               </svg>
@@ -167,15 +208,68 @@
       </section>
       <section class="contacts-section section" id="contacts-section">
         <div class="container">
-          <div class="contact-container">
+          <div class="contacts-section__container">
             <div class="contact-form">
-              <h2 class="section-title section-contact-title">
+              <h2 class="section__title contacts-section__title">
                 Join our network of bakeries
               </h2>
-              <p>Fill out this form, and we will contact you</p>
+              <p class="contacts-section__text">
+                Fill out this form, and we will contact you!
+              </p>
+              <form class="contact-form">
+                <div class="contacts-section__input-form-block input">
+                  <label class="input__label-form visually-hidden" for="name"
+                    >Name</label
+                  >
+                  <input
+                    class="input__form"
+                    type="text"
+                    id="name"
+                    name="name"
+                    minlength="2"
+                    maxlength="30"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
+                <div class="contacts-section__input-form-block input">
+                  <label class="input__label-form visually-hidden" for="phone"
+                    >Phone</label
+                  >
+                  <input
+                    class="input__form"
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Phone"
+                    pattern="^\+[0-9]{12}$"
+                    required
+                  />
+                </div>
+                <div class="contacts-section__input-form-block input">
+                  <label class="input__label-form visually-hidden" for="email"
+                    >Email</label
+                  >
+                  <input
+                    class="input__form"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <button class="contacts-section__button button" type="submit">
+                  Order a callback
+                </button>
+                <p class="form-privacy">
+                  By pressing this button, you agree to
+                  <a class="form-privacy__link" href="#">the privacy policy </a>
+                </p>
+              </form>
             </div>
             <iframe
-              class="contact-map"
+              class="contacts-section__map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.163447036114!2d30.488698376098355!3d50.45668098691574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1753080918581!5m2!1sru!2sua"
               width="603"
               height="595"
@@ -252,9 +346,68 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal-close-button" type="button">Close</button>
+        <button class="modal__close-button modal-close-button" type="button">
+          <img class="close-icon" src="./images/close-icon.svg" alt="close" />
+        </button>
+        <div class="modal__text">
+          <h2 class="modal__form-title">Order a callback</h2>
+          <p class="modal__description">
+            Submit the application, and our specialist will contact you!
+          </p>
+        </div>
+        <form class="modal-form">
+          <div class="modal__field input">
+            <label class="input__label-form visually-hidden" for="name"
+              >Name</label
+            >
+            <input
+              class="input__form"
+              type="text"
+              id="name"
+              name="name"
+              minlength="2"
+              maxlength="30"
+              placeholder="Name"
+              required
+            />
+          </div>
+          <div class="modal__field input">
+            <label class="input__label-form visually-hidden" for="phone"
+              >Phone</label
+            >
+            <input
+              class="input__form"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Phone"
+              pattern="^\+[0-9]{12}$"
+              required
+            />
+          </div>
+          <div class="modal__field input">
+            <label class="input__label-form visually-hidden" for="email"
+              >Email</label
+            >
+            <input
+              class="input__form"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <button class="modal__button button" type="submit">
+            Order a callback
+          </button>
+          <p class="form-privacy">
+            By pressing this button, you agree to
+            <a class="form-privacy__link" href="#">the privacy policy </a>
+          </p>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

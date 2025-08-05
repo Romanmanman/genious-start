@@ -1,0 +1,29 @@
+.nav-link {
+  color: var(--color-primary-light);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: var(--color-brand-normal);
+}
+.address-link {
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+  color: var(--color-primary-light);
+  transition: color 0.3s;
+}
+.address-link:hover {
+  color: var(--color-brand-normal);
+}
+.address-icon {
+  fill: var(--color-primary-light);
+  transition: fill 0.3s;
+}
+.address-icon:hover {
+  fill: var(--color-brand-normal);
+}
+.address-copyright {
+  font-size: 14px;
+  color: #a18268;
+}
