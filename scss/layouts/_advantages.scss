@@ -1,12 +1,26 @@
 .advantages {
-  background-color: var(--color-brand-normal);
   padding: 16px;
+  @media screen and (min-width: $bp-tablet) {
+    background-color: var(--color-brand-normal);
+  }
   &__main-features {
     display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    color: var(--color-primary-light);
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 24px;
+    padding: 24px 40px;
+    background-color: var(--color-brand-light);
     font-weight: 300;
-    font-size: 20px;
+    font-size: 14px;
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 40px;
+      background-color: transparent;
+      color: var(--color-primary-light);
+      font-size: 20px;
+      border-radius: 0;
+      padding: 0;
+    }
   }
 }

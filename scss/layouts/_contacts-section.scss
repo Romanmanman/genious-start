@@ -2,7 +2,12 @@
   padding-bottom: 96px;
   &__container {
     display: flex;
-    gap: 32px;
+    gap: 24px;
+    flex-direction: column;
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 32px;
+    }
   }
   &__title {
     margin-bottom: 16px;
@@ -11,9 +16,20 @@
     color: var(--color-brand-dark);
   }
   &__map {
+    height: 176px;
+    margin: 0 -24px;
     flex-shrink: 0;
     border: none;
     border-radius: 16px;
+    @media screen and (min-width: $bp-tablet) {
+      margin: auto;
+      width: 320px;
+      height: 500px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      width: 600px;
+      height: 595px;
+    }
   }
   &__input-form-block {
     margin-bottom: 24px;

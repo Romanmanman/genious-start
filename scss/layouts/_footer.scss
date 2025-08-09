@@ -6,40 +6,71 @@
   background-position: center;
   background-size: cover;
   padding: 32px;
-}
-.footer::before,
-.footer::after {
-  position: absolute;
-  content: '';
-  background-repeat: no-repeat;
-  bottom: 0;
-}
-.footer::before {
-  background-image: url('../images/one-bread.png');
-  width: 180px;
-  height: 120px;
-}
-.footer::after {
-  background-image: url('../images/two-breads.png');
-  width: 380px;
-  height: 180px;
-  right: 0;
-}
-.footer-container {
-  display: flex;
-  gap: 20px;
-}
-.footer-nav,
-.footer-address {
-  flex-basis: 50%;
-  display: flex;
-  gap: 20px;
-}
-.footer-logo,
-.footer-menu {
-  flex-grow: 1;
-}
-.address-list,
-.address-info {
-  flex-grow: 1;
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    background-repeat: no-repeat;
+    bottom: 0;
+  }
+  &::before {
+    background-image: url('../images/one-bread.png');
+    width: 180px;
+    height: 120px;
+  }
+  &::after {
+    background-image: url('../images/two-breads.png');
+    width: 380px;
+    height: 180px;
+    right: 0;
+  }
+  &__container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
+  }
+  &__nav,
+  &__address {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    text-align: center;
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      flex-basis: 50%;
+      text-align: left;
+    }
+  }
+  &__logo,
+  &__menu {
+    flex-grow: 1;
+  }
+  &__list,
+  &__info {
+    flex-grow: 1;
+  }
+  &__address-link {
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    color: var(--color-primary-light);
+    transition: color 0.3s;
+    &:hover {
+      color: var(--color-brand-normal);
+    }
+  }
+  &__address-icon {
+    fill: var(--color-primary-light);
+    transition: fill 0.3s;
+    &:hover {
+      fill: var(--color-brand-normal);
+    }
+  }
+  &__address-copyright {
+    font-size: 14px;
+    color: #a18268;
+  }
 }
