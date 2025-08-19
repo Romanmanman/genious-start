@@ -18,12 +18,12 @@
     width: 85px;
     height: 206px;
     left: 0;
-    top: 50px;
+    bottom: 260px;
     @media screen and (min-width: $bp-tablet) {
       background-image: url('../images/one-bread.png');
       width: 180px;
       height: 120px;
-      left: 0;
+      bottom: 0;
     }
   }
   &::after {
