@@ -1,5 +1,5 @@
 .traditions-section {
-  padding-top: 40px;
+  padding-bottom: 40px;
   @media screen and (min-width: $bp-tablet) {
     padding-top: 96px;
   }
@@ -13,7 +13,10 @@
     max-width: 710px;
   }
   &__title {
-    margin-bottom: 42px;
+    margin-bottom: 24px;
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 42px;
+    }
   }
   &__text {
     &--limited {

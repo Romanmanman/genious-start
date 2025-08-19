@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modern bakery</title>
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <link
       rel="stylesheet"
@@ -15,7 +16,12 @@
       <div class="container">
         <div class="header__container">
           <nav class="header__nav">
-            <a href="#"><img src="./images/logo.svg" alt="Shop bakery" /></a>
+            <a href="#"
+              ><img
+                class="header__img"
+                src="./images/logo.svg"
+                alt="Shop bakery"
+            /></a>
             <ul class="header__list">
               <li>
                 <a class="nav-link" href="#traditions-section"
@@ -49,6 +55,41 @@
             <svg class="mobile-menu__logo">
               <use href="./images/icons.svg#icon-logo"></use>
             </svg>
+            <ul class="mobile-menu__navigation">
+              <li>
+                <a
+                  class="mobile-menu__link mobile-menu-close-button"
+                  href="#traditions-section"
+                  >Our traditions</a
+                >
+              </li>
+              <li>
+                <a
+                  class="mobile-menu__link mobile-menu-close-button"
+                  href="#chefs-section"
+                  >Chefs</a
+                >
+              </li>
+              <li>
+                <a
+                  class="mobile-menu__link mobile-menu-close-button"
+                  href="#formats-section"
+                  >Format</a
+                >
+              </li>
+              <li>
+                <a
+                  class="mobile-menu__link mobile-menu-close-button"
+                  href="#contacts-section"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+            <img
+              class="mobile-menu__image"
+              src="./images/full-bread.png"
+              alt="Bread with letters"
+            />
           </div>
         </div>
       </div>
@@ -366,7 +407,6 @@
                     id="phone"
                     name="phone"
                     placeholder="Phone"
-                    pattern="^\+[0-9]{12}$"
                     required
                   />
                 </div>
@@ -386,7 +426,7 @@
                 <button class="contacts-section__button button" type="submit">
                   Order a callback
                 </button>
-                <p class="form-privacy">
+                <p class="contacts-section__privacy form-privacy">
                   By pressing this button, you agree to
                   <a class="form-privacy__link" href="#">the privacy policy </a>
                 </p>
@@ -408,37 +448,49 @@
         <div class="footer__container">
           <nav class="footer__nav">
             <div class="footer__logo">
-              <a href="/">
+              <a class="footer__logo-link" href="/">
                 <img src="./images/logo.svg" alt="Shop bakery" />
               </a>
             </div>
             <ul class="footer__menu">
               <li>
-                <a class="nav-link" href="#traditions-section"
+                <a class="nav-link footer__nav-link" href="#traditions-section"
                   >Our traditions</a
                 >
               </li>
-              <li><a class="nav-link" href="#chefs-section">Chefs</a></li>
-              <li><a class="nav-link" href="#formats-section">Format</a></li>
-              <li><a class="nav-link" href="#contacts-section">Contacts</a></li>
+              <li>
+                <a class="nav-link footer__nav-link" href="#chefs-section"
+                  >Chefs</a
+                >
+              </li>
+              <li>
+                <a class="nav-link footer__nav-link" href="#formats-section"
+                  >Format</a
+                >
+              </li>
+              <li>
+                <a class="nav-link footer__nav-link" href="#contacts-section"
+                  >Contacts</a
+                >
+              </li>
             </ul>
           </nav>
           <address class="footer__address">
             <div class="footer__address-contacts">
               <ul class="footer__address-list">
-                <li>
+                <li class="footer__address-item">
                   <a class="footer__address-link" href="tel:+380960000007"
                     >+38 (096) 000 00 07</a
                   >
                 </li>
-                <li>
+                <li class="footer__address-item">
                   <a
                     class="footer__address-link"
                     href="mailto:shopbakery@gmail.com"
                     >shopbakery@gmail.com</a
                   >
                 </li>
-                <li>
+                <li class="footer__address-item">
                   <a
                     class="footer__address-link"
                     href="https://maps.app.goo.gl/8Dp1csF3Va9S7KtK8"
@@ -447,7 +499,7 @@
                   >
                 </li>
               </ul>
-              <div>
+              <div class="footer__address-icons">
                 <a href="#">
                   <svg class="footer__address-icon" width="32" height="32">
                     <use href="./images/icons.svg#icon-facebook"></use>
@@ -514,7 +566,6 @@
               id="phone"
               name="phone"
               placeholder="Phone"
-              pattern="^\+[0-9]{12}$"
               required
             />
           </div>
@@ -539,6 +590,11 @@
             <a class="form-privacy__link" href="#">the privacy policy </a>
           </p>
         </form>
+        <img
+          class="modal__image"
+          src="./images/full-bread.png"
+          alt="Bread with letters"
+        />
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
